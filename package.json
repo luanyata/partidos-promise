@@ -1,0 +1,29 @@
+{
+  "name": "partidos-promise",
+  "version": "0.0.1",
+  "description": "Buscas por partidos políticos integrado aos dados abertos da Câmara dos deputados.",
+  "main": "index.js",
+  "scripts": {
+    "lint-check": "standard",
+    "lint-fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Otoru/partidos-promise.git"
+  },
+  "homepage": "https://github.com/Otoru/partidos-promise",
+  "devDependencies": {
+    "standard": "8.6.0",
+    "chai": "3.5.0",
+    "chai-as-promised": "6.0.0",
+    "mocha": "5.2.0"
+  },
+  "keywords": [
+    "partidos",
+    "política",
+    "Brasil",
+    "promise"
+  ],
+  "author": "Vitor Hugo de O. Vargas",
+  "license": "MIT"
+}
