@@ -1,3 +1,7 @@
-exports.list = () => {}
+exports.list = async () => {
+  return []
+}
 
-exports.get = () => {}
+exports.get = async () => {
+  return {}
+}

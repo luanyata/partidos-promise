@@ -1,22 +1,39 @@
 const chai = require('chai')
 const mocha = require('mocha')
+const chaiAsPromised = require('chai-as-promised')
 
-const partidos = require('../../src')
+const partidos = require('../../src/')
+
+chai.use(chaiAsPromised)
 
 mocha.describe('partidos-promise (unit tests)', function () {
   mocha.it('Should return a Object', function () {
-    chai.expect(partidos).to.be.a('object')
+    return chai.expect(partidos).to.be.a('object')
   })
 
-  const methods = ['list', 'get']
+  const methods = [
+    {
+      name: 'list',
+      typeOfReturn: 'array'
+    },
+    {
+      name: 'get',
+      typeOfReturn: 'object'
+    }
+  ]
 
   methods.forEach(function (method) {
-    mocha.it(`The object has a property "${method}"`, function () {
-      chai.expect(partidos).to.have.property(method)
+    mocha.it(`The object has a property "${method.name}"`, function () {
+      return chai.expect(partidos).to.have.property(method.name)
     })
 
-    mocha.it(`The property "${method}" is a function`, function () {
-      chai.expect(partidos[method]).to.be.a('function')
+    mocha.it(`The property "${method.name}" is a function`, function () {
+      return chai.expect(partidos[method.name]).to.be.a('AsyncFunction')
+    })
+
+    mocha.it(`The "${method.name}" method return and array`, function () {
+      const result = partidos[method.name]()
+      return chai.expect(result).eventually.to.be.a(method.typeOfReturn)
     })
   })
 })
