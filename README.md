@@ -15,9 +15,13 @@
 
 ## Características e Funcionalidades
 
-- Consulta em tempo real as informações disponiblizadas pela Câmara dos deputados através do sistema de sua política de [dados abertos](https://dadosabertos.camara.leg.br/).
+- Todas as consultas são em em tempo real.
 - Sem limites de uso (rate limits) conhecidos.
 - Interface de Promise extremamente simples.
+
+### Observações
+
+- Informações disponiblizadas pela Câmara dos deputados através do sistema de sua política de [dados abertos](https://dadosabertos.camara.leg.br/).
 
 ## Como contribuir
 
