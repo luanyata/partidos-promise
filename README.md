@@ -1,5 +1,5 @@
 <p align="center">
-  <img style="max-height:256px;border-radius:8px" src="https://logodownload.org/wp-content/uploads/2017/11/camara-dos-deputados-logo-1.png" />
+  <img style="max-height:128px;border-radius:8px" src="https://logodownload.org/wp-content/uploads/2017/11/camara-dos-deputados-logo-1.png" />
 </p>
 
 <h1 align="center">Partidos Promise</h1>
