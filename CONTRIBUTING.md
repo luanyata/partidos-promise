@@ -1,5 +1,7 @@
 # Como contribuir com o projeto
 
+Segue abaixo um pequeno texto para lhe ajudar a entender como pode ajudar este projeto.
+
 - [Instalando o projeto](#instalando-o-projeto)
 - [Reportando Issues](#reportando-issues)
 - [Submetendo Pull Requests](#submetendo-pull-requests)
@@ -21,8 +23,10 @@ Agora pronto, você já pode começar a contribuir com o projeto!
 Você pode criar uma issue [aqui](https://github.com/otoru/partidos-promise/issues), mas, lembre-se de ser claro e informar o máximo de detalhes possíveis.
 
 ## Submetendo Pull Requests
-* Crie pull requests pequenos, para que a revisão seja feita mais facilmente
-* Inclua detalhes do que está sendo feito na descrição
-* Altera a documentação se for necessário
-* Verifique se todos os testes estão passando localmente
-* Não esqueça de verificar o build com as validações de teste coverage e build no travis-ci
+
+- Crie pull requests pequenos, para que a revisão seja feita mais facilmente.
+- Inclua detalhes do que está sendo feito na descrição.
+- Altera a documentação se for necessário.
+- Verifique se todos os testes estão passando localmente.
+- Adicione suas informações como contribuidor do projeto.
+- Utilizamos [commitizen](https://github.com/commitizen/cz-cli) para padronização dos commits :D
