@@ -51,5 +51,7 @@
   "standard": {
     "parser": "babel-eslint"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@hapi/joi": "^17.1.0"
+  }
 }

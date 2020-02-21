@@ -31,16 +31,38 @@
 
 Segue um pequeno exemplo de código dos métodos expostos pela biblioteca.
 
+#### Listar partidos
+
+Usando o método `list` você tem a lista de todos os partidos cadastrados na Câmara.
+
+##### Código de exemplo
+
 ```js
 const partidos = require('partidos-promise')
 
-// Listando os partidos cadastrados na Câmara dos deputados
 partidos.list().then(lista => {
   lista.forEach(partido => {
     console.log(partido)
   })
 });
 
+partidos.list({
+  sigla: 'AB',
+}).then(lista => {
+  lista.forEach(partido => {
+    console.log(partido)
+  })
+});
+```
+
+##### Parâmetros de busca
+
+Podemos usar alguns parâmetros para fazer um filtro na hora de listas os partidos.
+
+
+#### Buscar partidos e membros
+
+```js
 // Buscando um partido especifico
 partidos.get({id: '12345'}).then(partido => {
   console.log(partido)
