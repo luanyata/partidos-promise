@@ -27,6 +27,36 @@
 
 - Informações disponiblizadas pela Câmara dos deputados através do sistema de sua política de [dados abertos](https://dadosabertos.camara.leg.br/).
 
+### Utilização
+
+Segue um pequeno exemplo de código dos métodos expostos pela biblioteca.
+
+```js
+const partidos = require('partidos-promise')
+
+// Listando os partidos cadastrados na Câmara dos deputados
+partidos.list().then(lista => {
+  lista.forEach(partido => {
+    console.log(partido)
+  })
+});
+
+// Buscando um partido especifico
+partidos.get({id: '12345'}).then(partido => {
+  console.log(partido)
+})
+
+// Buscando um membro do partido
+partidos.member({id: '12345'}).then(membro => {
+  console.log(membro)
+})
+```
+
+#### Observações
+
+- O projeto se encontra na etapa de planejamento.
+- Conforme as funcionalidades forem sendo desenvolvidas, esta documentação deve mellhorar.
+
 ## Como contribuir
 
 Leia nosso guia de contribuição [aqui](CONTRIBUTING.md)

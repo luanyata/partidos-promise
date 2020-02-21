@@ -18,6 +18,8 @@ Em seguida baixe os modulos necessários com:
 
 Agora pronto, você já pode começar a contribuir com o projeto!
 
+Se não tiver ideia de começo começar a participar, de uma olhada em nossos [projetos](https://github.com/Otoru/partidos-promise/projects/) e busque onde você pode ajudar.
+
 ## Reportando Issues
 
 Você pode criar uma issue [aqui](https://github.com/otoru/partidos-promise/issues), mas, lembre-se de ser claro e informar o máximo de detalhes possíveis.

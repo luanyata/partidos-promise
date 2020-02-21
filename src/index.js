@@ -5,3 +5,7 @@ exports.list = async () => {
 exports.get = async () => {
   return {}
 }
+
+exports.member = async () => {
+  return {}
+}

@@ -19,6 +19,10 @@ mocha.describe('partidos-promise (unit tests)', function () {
     {
       name: 'get',
       typeOfReturn: 'object'
+    },
+    {
+      name: 'member',
+      typeOfReturn: 'object'
     }
   ]
 
