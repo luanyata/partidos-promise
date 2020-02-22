@@ -40,38 +40,34 @@ Usando o método `list` você tem a lista de todos os partidos cadastrados na C�
 ```js
 const partidos = require('partidos-promise')
 
-partidos.list().then(lista => {
-  lista.forEach(partido => {
-    console.log(partido)
-  })
-});
+partidos.list().then(console.log);
 
-partidos.list({
-  sigla: 'AB',
-}).then(lista => {
-  lista.forEach(partido => {
-    console.log(partido)
-  })
-});
+// [
+//   {
+//     id: 1,
+//     sigla: 'ABcD',
+//     nome: 'Partido Aleatório do Brasil',
+//   },
+//   {
+//     id: 2,
+//     sigla: 'ABcD',
+//     nome: 'Partido Aleatório do Brasil',
+//   }
+// ]
 ```
 
-##### Parâmetros de busca
+##### Tratamento de erros
 
-Podemos usar alguns parâmetros para fazer um filtro na hora de listas os partidos.
-
+Por se tratar de um consumo direto da WEB, a poucos cenários de falha. mas...
 
 #### Buscar partidos e membros
 
 ```js
 // Buscando um partido especifico
-partidos.get({id: '12345'}).then(partido => {
-  console.log(partido)
-})
+partidos.get({id: '12345'}).then(console.log)
 
 // Buscando um membro do partido
-partidos.member({id: '12345'}).then(membro => {
-  console.log(membro)
-})
+partidos.member({id: '12345'}).then(console.log)
 ```
 
 #### Observações
