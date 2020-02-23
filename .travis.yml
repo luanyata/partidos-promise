@@ -12,8 +12,18 @@ branches:
   only:
   - master
 
+jobs:
+  include:
+    - stage: testing
+      script:
+        - npm run test
+    - stage: npm release
+      script:
+        - npm run build
+
 deploy:
   edge: true
+  cleanup: true
   provider: npm
   email: $NPM_EMAIL
   api_key: $NPM_TOKEN

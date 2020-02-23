@@ -9,9 +9,9 @@
     "commit": "git-cz",
     "lint": "standard",
     "lint:fix": "standard --fix",
-    "test": "mocha test/**/*.spec.js || exit 0",
-    "test:unit": "mocha test/unit/*.spec.js || exit 0",
-    "test:e2e": "mocha test/e2e/*.spec.js || exit 0",
+    "test": "mocha test/**/*.spec.js",
+    "test:unit": "mocha test/unit/*.spec.js",
+    "test:e2e": "mocha test/e2e/*.spec.js",
     "test:coverage": "nyc npm run test",
     "build": "rm -rf dist && webpack"
   },
