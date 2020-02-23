@@ -15,6 +15,9 @@
   <a href="http://standardjs.com/">
     <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg">
   </a>
+  <a href="https://snyk.io/test/github/Otoru/partidos-promise?targetFile=package.json">
+    <img src="https://snyk.io/test/github/Otoru/partidos-promise/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/Otoru/partidos-promise?targetFile=package.json" style="max-width:100%;">
+  </a>
 </p>
 
 ## Características e Funcionalidades
