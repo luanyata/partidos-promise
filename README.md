@@ -12,8 +12,11 @@
   <a href="https://github.com/Otoru/partidos-promise/blob/master/LICENSE.md">
     <img alt="GitHub" src="https://img.shields.io/github/license/Otoru/partidos-promise">
   </a>
+  <a href="https://www.npmjs.com/package/partidos-promise">
+    <img alt="npm" src="https://img.shields.io/npm/v/partidos-promise">
+  </a>
   <a href="http://standardjs.com/">
-    <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg">
+    <img alt="standard" src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg">
   </a>
   <a href="https://snyk.io/test/github/Otoru/partidos-promise?targetFile=package.json">
     <img src="https://snyk.io/test/github/Otoru/partidos-promise/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/Otoru/partidos-promise?targetFile=package.json" style="max-width:100%;">
@@ -32,7 +35,7 @@
 
 ### Utilização
 
-Segue um pequeno exemplo de código dos métodos expostos pela biblioteca.
+Você pode clicar [aqui](https://npm.runkit.com/partidos-promise) para ver a biblioteca em funcionamento, mas caso prefira, segue um pequeno exemplo de código dos métodos expostos.
 
 #### Listar partidos
 

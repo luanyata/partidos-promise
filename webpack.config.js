@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'partidos-promise.min.js',
-    libraryTarget: 'commonjs2',
+    libraryTarget: 'commonjs',
     library: 'partidos-promise'
   },
   target: 'node',

@@ -1,0 +1,21 @@
+language: node_js
+
+cache:
+  directories:
+  - node_modules
+
+node_js:
+- node
+- '10'
+
+after_script:
+  - npm install
+
+deploy:
+  provider: npm
+  email: vitor.hov@gmail.com
+  api_key:
+    secure: vRM7V+bBakEkkwvfJorUgvJNwUb8ETiSr7mxpAKVGcTKL1T8abay2fDm7G+AgFknZ6lmuQ/nYSdTdEe4tfbVTn8x/SyZT9b59zX6amCDaq2DQhZJZtNsfYW9QAfWEok+23s5Px1IVTDkJJjTide4gBruqvLO/UmdkdMim7/Y9a86erFaP+SDz96e4UYLJs9WnE45S8Jbva4JjUJuJkd48CE2OQEv6OC7D97ADxiDkVJHgD2bq6JavEwkVQW0RvRHGK3SO1wKJ9SNgpvPOlE5P/1McxWChUrV1yHP2tX4N+dvY3OUW9g5Y9OYXx3OynR5oV11YX791hamjqrnmQgVsONdWU6Gf1cF2SIa0QLTGghpReKwvPpYXT1yLEJpxsVwWm+GOrqvLjJfITrdBSP2o1pGhcc2uJAweqp741/ikvVuhDLTwennF/RH2B3rnbq1fpAYsopJ+FmONOZodXXghU8tNFaXB2u0DgGQU3SGT+Dr3PjmngNASX/u3uYBuwqsMGvYyXi82JvncZp1bZwSTnpYF8h37COAStOA58LIz/WcP5qjqxuMr5mAbRi4L4y2Qo2Tgv57BK++aLOOpYTl5yCehkt8HvOYGgo+yjFj7jEPHwSG7LDoIimLZasWGDTK55ssktsjSeu+pUKov+aZ6Skl2ij4U+h2ZzL7+2l4tx0=
+  on:
+    branch: master
+    repo: Otoru/partidos-promise
