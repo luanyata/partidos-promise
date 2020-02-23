@@ -10,7 +10,10 @@
 
 <p align="center">
   <a href="https://github.com/Otoru/partidos-promise/blob/master/LICENSE.md">
-    <img alt="build" src="https://travis-ci.org/Otoru/partidos-promise.svg">
+    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/otoru/partidos-promise/Node.js Package">
+  </a>
+  <a href="https://github.com/Otoru/partidos-promise/blob/master/LICENSE.md">
+    <img alt="GitHub" src="https://img.shields.io/github/license/otoru/partidos-promise">
   </a>
   <a href="https://www.npmjs.com/package/partidos-promise">
     <img alt="npm" src="https://img.shields.io/npm/v/partidos-promise">
