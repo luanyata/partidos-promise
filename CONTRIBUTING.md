@@ -31,4 +31,12 @@ Você pode criar uma issue [aqui](https://github.com/otoru/partidos-promise/issu
 - Altera a documentação se for necessário.
 - Verifique se todos os testes estão passando localmente.
 - Adicione suas informações como contribuidor do projeto.
-- Utilizamos [commitizen](https://github.com/commitizen/cz-cli) para padronização dos commits :D
+- Utilizamos [commitizen](https://github.com/commitizen/cz-cli) para padronização dos commits.
+
+### Modificando as versões do projeto
+
+Uma alteração no master irá realizar o deploy de uma nova versão da aplicação no NPM, por isso, cada alteração deve ser seguida de uma alteração de versão. Para fazer a mesma, use os comandos abaixo:
+
+- `npm version patch` para uma correção realizada no projeto. Ou seja, não tivemos qualquer alteração no comportamento da biblioteca.
+- `npm version minor` entrega de uma nova funcionalidade, sem modificar funcionamento de outras.
+- `npm version major` quando alteramos o comportamento de funcionalidades já existentes.

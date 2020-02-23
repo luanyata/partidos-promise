@@ -1,6 +1,6 @@
 {
   "name": "partidos-promise",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "dist/partidos-promise.min.js",
   "description": "Buscas por partidos políticos integrado aos dados abertos da Câmara dos deputados.",
   "scripts": {
