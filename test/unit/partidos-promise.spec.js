@@ -12,14 +12,8 @@ mocha.describe('partidos-promise (unit tests)', function () {
   })
 
   const methods = [
-    {
-      name: 'get',
-      typeOfReturn: 'object'
-    },
-    {
-      name: 'member',
-      typeOfReturn: 'object'
-    }
+    { name: 'get', typeOfReturn: 'object' },
+    { name: 'member', typeOfReturn: 'object' }
   ]
 
   methods.forEach(function (method) {

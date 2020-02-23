@@ -1,17 +1,22 @@
 const axios = require('axios').default
 
+const errors = require('./errors')
+
 const listLoader = async (url) => {
-  const { data } = await axios.get(url)
-  const { dados, links } = data
-  const [self, next,, last] = links
-  return [dados, self.href, next.href, last.href]
+  try {
+    const { data } = await axios.get(url)
+    const { dados, links } = data
+    const [self, next,, last] = links
+    return [dados, self.href, next.href, last.href]
+  } catch (err) {
+    throw new errors.ApiError(err.message, err)
+  }
 }
 
 exports.list = async () => {
-  let payload = []
   const URI = 'https://dadosabertos.camara.leg.br/api/v2/partidos?pagina=1&itens=10'
-
   let [dados, self, next, last] = await listLoader(URI)
+  let payload = []
 
   while (true) {
     payload = payload.concat(dados)

@@ -56,10 +56,6 @@ partidos.list().then(console.log);
 // ]
 ```
 
-##### Tratamento de erros
-
-Por se tratar de um consumo direto da WEB, a poucos cenários de falha. mas...
-
 #### Buscar partidos e membros
 
 ```js
@@ -69,6 +65,11 @@ partidos.get({id: '12345'}).then(console.log)
 // Buscando um membro do partido
 partidos.member({id: '12345'}).then(console.log)
 ```
+
+#### Tratamento de erros
+
+Todos os erros da API são encapsulados em um `ApiError` que contem dois campos, `message` e `error`.
+O campo `error` permite ao desenvolvedor ter acesso ao erro que gerou a exceção e realizar um tratamento personalizado.
 
 #### Observações
 
