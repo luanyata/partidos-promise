@@ -32,7 +32,7 @@
 
 ### Utilização
 
-Segue um pequeno exemplo de código dos métodos expostos pela biblioteca.
+VocÊ pode clicar [aqui](https://npm.runkit.com/partidos-promise) para ver a biblioteca em funcionamento, mas caso prefira, segue um pequeno exemplo de código dos métodos expostos.
 
 #### Listar partidos
 
