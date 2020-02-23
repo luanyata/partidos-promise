@@ -1,13 +1,7 @@
 const path = require('path')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
-const uglify = new UglifyJsPlugin({
-  uglifyOptions: {
-    output: {
-      comments: false
-    }
-  }
-})
+const terser = new TerserPlugin()
 
 module.exports = {
   entry: './src/index.js',
@@ -26,12 +20,12 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ['env']
+          presets: ['@babel/preset-env']
         }
       }
     ]
   },
   optimization: {
-    minimizer: [uglify]
+    minimizer: [terser]
   }
 }

@@ -15,6 +15,9 @@
   <a href="http://standardjs.com/">
     <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg">
   </a>
+  <a href="https://snyk.io/test/github/Otoru/partidos-promise?targetFile=package.json">
+    <img src="https://snyk.io/test/github/Otoru/partidos-promise/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/Otoru/partidos-promise?targetFile=package.json" style="max-width:100%;">
+  </a>
 </p>
 
 ## Características e Funcionalidades
@@ -31,26 +34,45 @@
 
 Segue um pequeno exemplo de código dos métodos expostos pela biblioteca.
 
+#### Listar partidos
+
+Usando o método `list` você tem a lista de todos os partidos cadastrados na Câmara.
+
+##### Código de exemplo
+
 ```js
 const partidos = require('partidos-promise')
 
-// Listando os partidos cadastrados na Câmara dos deputados
-partidos.list().then(lista => {
-  lista.forEach(partido => {
-    console.log(partido)
-  })
-});
+partidos.list().then(console.log);
 
+// [
+//   {
+//     id: 1,
+//     sigla: 'ABcD',
+//     nome: 'Partido Aleatório do Brasil',
+//   },
+//   {
+//     id: 2,
+//     sigla: 'ABcD',
+//     nome: 'Partido Aleatório do Brasil',
+//   }
+// ]
+```
+
+#### Buscar partidos e membros
+
+```js
 // Buscando um partido especifico
-partidos.get({id: '12345'}).then(partido => {
-  console.log(partido)
-})
+partidos.get({id: '12345'}).then(console.log)
 
 // Buscando um membro do partido
-partidos.member({id: '12345'}).then(membro => {
-  console.log(membro)
-})
+partidos.member({id: '12345'}).then(console.log)
 ```
+
+#### Tratamento de erros
+
+Todos os erros da API são encapsulados em um `ApiError` que contem dois campos, `message` e `error`.
+O campo `error` permite ao desenvolvedor ter acesso ao erro que gerou a exceção e realizar um tratamento personalizado.
 
 #### Observações
 
