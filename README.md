@@ -9,9 +9,6 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/Otoru/partidos-promise/">
-    <img alt="GitHub" src="https://img.shields.io/github/license/Otoru/partidos-promise">
-  </a>
   <a href="https://github.com/Otoru/partidos-promise/blob/master/LICENSE.md">
     <img alt="build" src="https://travis-ci.org/Otoru/partidos-promise.svg">
   </a>
