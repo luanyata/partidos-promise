@@ -73,7 +73,10 @@ mocha.describe('List political parties (unit tests)', function () {
 mocha.describe('Lists political parties with API errors (unit tests)', function () {
   mocha.beforeEach(function () {
     sandbox.replace(axios, 'get', async (path) => {
-      throw createError('Request failed with status code > 399')
+      const request = { path }
+      const data = { foo: 'bar' }
+      const response = { status: 500, data }
+      throw createError('This is a test', data, 'TEST', request, response)
     })
   })
 
