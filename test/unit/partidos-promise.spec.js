@@ -6,8 +6,8 @@ const partidos = require('../../src/')
 
 chai.use(chaiAsPromised)
 
-mocha.describe('partidos-promise (unit tests)', function () {
-  mocha.it('Should return a Object', function () {
+mocha.describe('partidos-promise (generalismo) (testes unitários)', function () {
+  mocha.it('A bibliioteca é um objeto', function () {
     return chai.expect(partidos).to.be.a('object')
   })
 
@@ -17,15 +17,15 @@ mocha.describe('partidos-promise (unit tests)', function () {
   ]
 
   methods.forEach(function (method) {
-    mocha.it(`The object has a property "${method.name}"`, function () {
+    mocha.it(`O objeto tem uma propriedade chamada "${method.name}"`, function () {
       return chai.expect(partidos).to.have.property(method.name)
     })
 
-    mocha.it(`The property "${method.name}" is a function`, function () {
+    mocha.it(`A propriedade "${method.name}" é uma função assíncrona`, function () {
       return chai.expect(partidos[method.name]).to.be.a('AsyncFunction')
     })
 
-    mocha.it(`The "${method.name}" method return and array`, function () {
+    mocha.it(`O método "${method.name}" retorna um(a) ${method.typeOfReturn}`, function () {
       const result = partidos[method.name]()
       return chai.expect(result).eventually.to.be.a(method.typeOfReturn)
     })

@@ -20,19 +20,9 @@ mocha.describe('Partidos-promise (testes e2e)', function () {
   mocha.it('Listando partidos', function () {
     const result = partidos.list()
     return chai.expect(result).eventually.to.deep.equal([
-      {
-        id: 1,
-        sigla: 'ABcD',
-        nome: 'Partido Aleatório do Brasil'
-      }, {
-        id: 2,
-        sigla: 'ABcD',
-        nome: 'Partido Aleatório do Brasil'
-      }, {
-        id: 3,
-        sigla: 'ABcD',
-        nome: 'Partido Aleatório do Brasil'
-      }
+      { id: 1, sigla: 'ABcD', nome: 'Partido Aleatório do Brasil' },
+      { id: 2, sigla: 'ABcD', nome: 'Partido Aleatório do Brasil' },
+      { id: 3, sigla: 'ABcD', nome: 'Partido Aleatório do Brasil' }
     ])
   })
 
